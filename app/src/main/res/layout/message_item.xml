@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/drawer_gift_layout"
+android:layout_width="match_parent"
+android:layout_height="210dp"
+android:layout_margin="15dp"
+app:cardCornerRadius="10dp"
+app:cardElevation="5dp"
+    >
+
+
+<LinearLayout
+    android:id="@+id/ll_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="25sp"
+        android:textSize="25sp"/>
+
+    <View
+        android:background="#7A8B8B"
+        android:layout_width="wrap_content"
+        android:layout_height="1sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/message_click"
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"
+        android:gravity="center_vertical"/>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

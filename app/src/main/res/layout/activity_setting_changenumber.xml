@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#F2F2F2"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/country"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="50dp"
+        android:showDividers="end|beginning"
+        android:divider="@drawable/devide_line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="国家和地区"
+                android:textSize="15dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="中国大陆"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/district"
+                android:layout_marginLeft="150dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="50dp"
+        android:showDividers="end|beginning"
+        android:divider="@drawable/devide_line">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/eightsix"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:text="+86"
+                android:textSize="15dp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/ed"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:hint="请输入您的手机号"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_toRightOf="@+id/eightsix"
+                android:layout_marginLeft="85dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_green_round"
+        android:text="下一步"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="一个手机号只能作为一个账号的登录名"/>
+
+
+
+
+
+
+</LinearLayout>
